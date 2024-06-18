@@ -48,45 +48,41 @@ main select{
 .berechnung {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 7vh);
+    grid-template-rows: repeat(3, 6vh);
+    background-color: rgba(255, 89, 0, 0.448);
+    margin-top: 4vh;
+    border-radius: 5px;
+    padding: 5px;
 }
 .kcal {
-    background-color: aquamarine;
     grid-column: 2/4;
-    grid-row: 1/2;   
+    grid-row: 1/2;  
 }
 .kj {
-    background-color: beige;
     grid-column: 3/4;
     grid-row: 1/2;
 }
 .grundumsatz {
-    background-color: brown;
     grid-column: 1/4;
     grid-row: 2/3;
 }
 .gesamtumsatz {
-    background-color: blueviolet;
     grid-column: 1/4;
     grid-row: 3/4;
 }
 .outputGrundumsatzKcal {
-    background-color: rgba(255, 0, 0, 0.378);
     grid-column: 2/3;
     grid-row: 2/3;
 }
 .outputGrundumsatzKJ {
-    background-color: rgba(255, 0, 0, 0.423);
     grid-column: 3/4;
     grid-row: 2/3;
 }
 .outputGesamtumsatzKcal {
-    background-color: green;
     grid-column: 2/3;
     grid-row: 3/4;
 }
 .outputGesamtumsatzKJ {
-    background-color:chocolate ;
     grid-column: 3/4;
     grid-row: 3/4;
 }

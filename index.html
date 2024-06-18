@@ -22,13 +22,13 @@
         <input type="number" id="gewicht" placeholder="in kg">
 
         <article class="radio">
-            <input type="radio" name="geschlecht" id="weiblich" value="Weiblich">
+            <input type="radio" name="geschlecht" id="weiblich" value="Weiblich" checked>
             <label for="weiblich">Weiblich</label>
             <input type="radio" name="geschlecht" id="männlich"     value="Männlich">
             <label for="männlich">Männlich</label>
         </article>
 
-        <select id="">
+        <select id="palFaktor">
             <option value="0.95"
             >Schlafen</option>
             <option value="1.2"
@@ -43,7 +43,7 @@
             >körperlich anstrengende berufliche Arbeit</option>
         </select>
 
-        <input class="submit" type="submit" id="Submit" value="Submit">
+        <input onclick="kalorienrechner()" class="submit" type="submit" id="Submit" value="Submit">
 
 <!-- ------Output der Berechnung----- -->
 
@@ -52,14 +52,18 @@
             <p class="kj">kJ</p>
             
             <p class="grundumsatz">Grundumsatz:</p>
-            <p class="outputGrundumsatzKcal">!</p>
-            <p class="outputGrundumsatzKJ">!</p>
+            <p class="outputGrundumsatzKcal"></p>
+            <p class="outputGrundumsatzKJ"></p>
             
             <p class="gesamtumsatz">Gesamtumsatz</p>
-            <p class="outputGesamtumsatzKcal">?</p>
-            <p class="outputGesamtumsatzKJ">?</p>
+            <p class="outputGesamtumsatzKcal"></p>
+            <p class="outputGesamtumsatzKJ"></p>
            
         </section>
+
+        <p class="outputTest"></p>
+
+
     </main>
     <script src="./assets/js/script.js"></script>
 </body>
