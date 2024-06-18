@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+}
+
+/* ---main---- */
+
+
+main {
+    background-color: rgba(128, 128, 128, 0.279);
+    height: 600px;
+    width: 400px;
+    margin: auto;
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    padding: 2vh;
+    line-height: 6vh;
+}
+main h1 {
+    text-align: center;
+}
+main input {
+    padding: 1vh;
+    border: 1px solid blueviolet ;
+    border-radius: 5px;
+    border-color: blueviolet;
+}
+main select{
+    padding: 1vh;
+    border: 1px solid blueviolet ;
+    border-radius: 5px;
+}
+.submit {
+    background-color: rgba(255, 0, 0, 0.558);
+    margin-top: 4vh;
+    padding: 2vh;
+    font-size: 1.5rem;
+}
+
+/* -----Berechnung----- */
+
+.berechnung {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 7vh);
+}
+.kcal {
+    background-color: aquamarine;
+    grid-column: 2/4;
+    grid-row: 1/2;   
+}
+.kj {
+    background-color: beige;
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+.grundumsatz {
+    background-color: brown;
+    grid-column: 1/4;
+    grid-row: 2/3;
+}
+.gesamtumsatz {
+    background-color: blueviolet;
+    grid-column: 1/4;
+    grid-row: 3/4;
+}
+.outputGrundumsatzKcal {
+    background-color: rgba(255, 0, 0, 0.378);
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+.outputGrundumsatzKJ {
+    background-color: rgba(255, 0, 0, 0.423);
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+.outputGesamtumsatzKcal {
+    background-color: green;
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+.outputGesamtumsatzKJ {
+    background-color:chocolate ;
+    grid-column: 3/4;
+    grid-row: 3/4;
+}
